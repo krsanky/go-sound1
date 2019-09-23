@@ -3,8 +3,10 @@ package sound1
 import (
 	"fmt"
 	"os"
+	"time"
 
 	"github.com/faiface/beep/mp3"
+	"github.com/faiface/beep/speaker"
 )
 
 func Noise() {
@@ -19,4 +21,8 @@ func Noise() {
 	}
 	defer streamer.Close()
 	fmt.Printf("streamer:%v format:%v\n", streamer, format)
+
+	speaker.Init(format.SampleRate, format.SampleRate.N(time.Second/10))
+	speaker.Play(streamer)
+
 }
