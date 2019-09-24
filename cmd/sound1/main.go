@@ -1,6 +1,6 @@
 package main
 
-import "github.com/krsanky/go-sound1"
+import sound1 "github.com/krsanky/go-sound1"
 
 func main() {
 	err := sound1.Run1()
