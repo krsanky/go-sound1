@@ -1,7 +1,7 @@
 package main
 
 import (
-	"oldcode.org/home/wise/repo/go/sound1"
+	"github.com/krsanky/go-sound1"
 )
 
 func main() {
